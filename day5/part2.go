@@ -40,13 +40,13 @@ func getAllCoordinates(vent_lines [][][]int) [][]int {
 		} else if x1 > x2 && y1 < y2 {
 			// left and up
 			for i := 0; i <= x1-x2; i++ {
-				coordinates = append(coordinates, []int{x1 + i, y1 + i})
+				coordinates = append(coordinates, []int{x1 - i, y1 + i})
 			}
 
 		} else if x1 > x2 && y1 > y2 {
 			// left and down
 			for i := 0; i <= x1-x2; i++ {
-				coordinates = append(coordinates, []int{x1 + i, y1 - i})
+				coordinates = append(coordinates, []int{x1 - i, y1 - i})
 			}
 		}
 
@@ -55,7 +55,7 @@ func getAllCoordinates(vent_lines [][][]int) [][]int {
 }
 
 func Part2() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("./day5/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -75,6 +75,7 @@ func Part2() {
 	coordinates := getAllCoordinates(vent_lines)
 
 	marked_grid := markGrid(coordinates, grid)
+	printGrid(marked_grid)
 
 	sum := sumGrid(marked_grid)
 

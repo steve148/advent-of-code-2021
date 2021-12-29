@@ -33,7 +33,7 @@ func getCoordinates(vent_lines [][][]int) [][]int {
 }
 
 func Part1() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("./day5/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -53,6 +53,7 @@ func Part1() {
 	coordinates := getCoordinates(vent_lines)
 
 	marked_grid := markGrid(coordinates, grid)
+	printGrid(marked_grid)
 
 	sum := sumGrid(marked_grid)
 

@@ -1,6 +1,7 @@
 package day5
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 )
@@ -35,9 +36,7 @@ func parseInput(lines []string) ([][][]int, int, int) {
 
 			coordinates = append(coordinates, coordinate)
 		}
-		if coordinates[0][0] == coordinates[1][0] || coordinates[0][1] == coordinates[1][1] {
-			vent_lines = append(vent_lines, coordinates)
-		}
+		vent_lines = append(vent_lines, coordinates)
 	}
 	return vent_lines, max_x, max_y
 }
@@ -91,4 +90,10 @@ func sumGrid(grid [][]int) int {
 		}
 	}
 	return count
+}
+
+func printGrid(grid [][]int) {
+	for _, row := range grid {
+		fmt.Println(row)
+	}
 }
