@@ -1,4 +1,4 @@
-package main
+package day4
 
 import (
 	"bufio"
@@ -9,64 +9,7 @@ import (
 	"strings"
 )
 
-type BingoBoard struct {
-	numbers [][]int
-	marked  [5][5]bool
-}
-
-func (b *BingoBoard) updateBoard(x int) {
-	for i := 0; i < len(b.numbers); i++ {
-		for j := 0; j < len(b.numbers[i]); j++ {
-			if b.numbers[i][j] == x {
-				b.marked[i][j] = true
-			}
-		}
-	}
-}
-
-func (b *BingoBoard) isBingo() bool {
-	// Do any rows have a full columns
-	for i := 0; i < len(b.marked); i++ {
-		if isBingo(b.marked[i][:]) {
-			return true
-		}
-	}
-	// Do any columns have a match
-	for i := 0; i < len(b.marked); i++ {
-		var column []bool
-		for _, row := range b.marked {
-			column = append(column, row[i])
-		}
-		if isBingo(column) {
-			return true
-		}
-	}
-
-	return false
-}
-
-func isBingo(b []bool) bool {
-	for _, v := range b {
-		if !v {
-			return false
-		}
-	}
-	return true
-}
-
-func (b *BingoBoard) sumUnmarked() int {
-	sum := 0
-	for i := 0; i < len(b.marked); i++ {
-		for j := 0; j < len(b.marked[i]); j++ {
-			if !b.marked[i][j] {
-				sum += b.numbers[i][j]
-			}
-		}
-	}
-	return sum
-}
-
-func playGame(numbers []int, boards []*BingoBoard) int {
+func playToWin(numbers []int, boards []*BingoBoard) int {
 	for _, number := range numbers {
 		for _, board := range boards {
 			board.updateBoard(number)
@@ -80,7 +23,7 @@ func playGame(numbers []int, boards []*BingoBoard) int {
 	return 0
 }
 
-func main() {
+func Part1() {
 	file, err := os.Open("input.txt")
 	if err != nil {
 		log.Fatal(err)
@@ -130,7 +73,7 @@ func main() {
 		}
 	}
 
-	score := playGame(chosen_numbers, boards)
+	score := playToWin(chosen_numbers, boards)
 
 	fmt.Println(score)
 }
