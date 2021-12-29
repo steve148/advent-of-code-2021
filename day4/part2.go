@@ -13,7 +13,8 @@ func playToLose(numbers []int, boards []*BingoBoard) int {
 	num_complete := 0
 	for _, number := range numbers {
 		for _, board := range boards {
-			if !board.complete {
+
+			if board.isComplete() {
 				board.updateBoard(number)
 				if board.isBingo() {
 					if len(boards)-1 == num_complete {

@@ -6,6 +6,10 @@ type BingoBoard struct {
 	complete bool
 }
 
+func (b *BingoBoard) isComplete() bool {
+	return b.complete
+}
+
 func (b *BingoBoard) updateBoard(x int) {
 	for i := 0; i < len(b.numbers); i++ {
 		for j := 0; j < len(b.numbers[i]); j++ {
