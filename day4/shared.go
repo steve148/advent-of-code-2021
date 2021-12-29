@@ -1,8 +1,9 @@
 package day4
 
 type BingoBoard struct {
-	numbers [][]int
-	marked  [5][5]bool
+	numbers  [][]int
+	marked   [5][5]bool
+	complete bool
 }
 
 func (b *BingoBoard) updateBoard(x int) {
