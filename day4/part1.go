@@ -67,7 +67,7 @@ func Part1() {
 
 		if len(numbers) == 5 {
 			var marked [5][5]bool
-			board := BingoBoard{numbers: numbers, marked: marked}
+			board := BingoBoard{numbers: numbers, marked: marked, complete: false}
 			boards = append(boards, &board)
 			numbers = nil
 		}
