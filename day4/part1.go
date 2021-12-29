@@ -24,7 +24,7 @@ func playToWin(numbers []int, boards []*BingoBoard) int {
 }
 
 func Part1() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("./day4/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
