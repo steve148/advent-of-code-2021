@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 
+	"github.com/steve148/advent-of-code-2021/day10"
 	"github.com/steve148/advent-of-code-2021/day4"
 	"github.com/steve148/advent-of-code-2021/day5"
 	"github.com/steve148/advent-of-code-2021/day6"
@@ -40,5 +41,9 @@ func main() {
 		day9.Part1()
 	} else if day == "9" && part == "2" {
 		day9.Part2()
+	} else if day == "10" && part == "1" {
+		day10.Part1()
+	} else if day == "10" && part == "2" {
+		day10.Part2()
 	}
 }
