@@ -8,6 +8,7 @@ import (
 	"github.com/steve148/advent-of-code-2021/day6"
 	"github.com/steve148/advent-of-code-2021/day7"
 	"github.com/steve148/advent-of-code-2021/day8"
+	"github.com/steve148/advent-of-code-2021/day9"
 )
 
 func main() {
@@ -35,5 +36,9 @@ func main() {
 		day8.Part1()
 	} else if day == "8" && part == "2" {
 		day8.Part2()
+	} else if day == "9" && part == "1" {
+		day9.Part1()
+	} else if day == "9" && part == "2" {
+		day9.Part2()
 	}
 }

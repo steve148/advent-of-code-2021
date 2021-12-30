@@ -10,3 +10,5 @@ github.com/steve148/advent-of-code-2021/day7 v0.0.0-20211230012304-6dc72d4956dc 
 github.com/steve148/advent-of-code-2021/day7 v0.0.0-20211230012304-6dc72d4956dc/go.mod h1:oRTe+C1RgjML9cI8hudlV2n1jEp5vf1VlZo7zgzb+Ug=
 github.com/steve148/advent-of-code-2021/day8 v0.0.0-20211230020743-2e957b0674b4 h1:JFdeQuMzgUnpx+SdGcq8qMv+BNTRni6JaN6F6HfbL5E=
 github.com/steve148/advent-of-code-2021/day8 v0.0.0-20211230020743-2e957b0674b4/go.mod h1:dKMmINhX+vaEgU7f01k62ku7w6adGi8kKcM8IJ/LqBE=
+github.com/steve148/advent-of-code-2021/day9 v0.0.0-20211230052202-c61c5e759cbd h1:jvK4xWuRlhq0u9YTBr+jqwTlGnF+/0sq/Umv72cEdxA=
+github.com/steve148/advent-of-code-2021/day9 v0.0.0-20211230052202-c61c5e759cbd/go.mod h1:wzaWKKbKuSbqW3KKPU682x0C4AhNbDV0jaYNmykj5RQ=
