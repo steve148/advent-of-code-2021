@@ -12,4 +12,4 @@ replace github.com/steve148/advent-of-code-2021/day5 v0.0.0-20211229205134-3657d
 
 replace github.com/steve148/advent-of-code-2021/day5 v0.0.0-20211229205134-6f209bcc75b8 => ./day5
 
-replace github.com/steve148/advent-of-code-2021/day6 v0.0.0-20211229222651-d7e270f4b4e0 => ./clear
+replace github.com/steve148/advent-of-code-2021/day6 v0.0.0-20211229222651-d7e270f4b4e0 => ./day6
