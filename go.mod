@@ -4,6 +4,7 @@ go 1.17
 
 require (
 	github.com/steve148/advent-of-code-2021/day10 v0.0.0-20211230163928-f0bd326f042b // indirect
+	github.com/steve148/advent-of-code-2021/day11 v0.0.0-20211230230822-c24ab15aa523 // indirect
 	github.com/steve148/advent-of-code-2021/day4 v0.0.0-20211229222332-54e3a202e14e // indirect
 	github.com/steve148/advent-of-code-2021/day5 v0.0.0-20211229220039-b6d6cab8af99 // indirect
 	github.com/steve148/advent-of-code-2021/day6 v0.0.0-20211229222651-d7e270f4b4e0 // indirect
@@ -25,3 +26,5 @@ replace github.com/steve148/advent-of-code-2021/day8 v0.0.0-20211230020743-2e957
 replace github.com/steve148/advent-of-code-2021/day9 v0.0.0-20211230052202-c61c5e759cbd => ./day9
 
 replace github.com/steve148/advent-of-code-2021/day10 v0.0.0-20211230163928-f0bd326f042b => ./day10
+
+replace github.com/steve148/advent-of-code-2021/day11 v0.0.0-20211230230822-c24ab15aa523 => ./day11
