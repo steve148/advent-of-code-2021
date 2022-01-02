@@ -6,6 +6,7 @@ import (
 	"github.com/steve148/advent-of-code-2021/day10"
 	"github.com/steve148/advent-of-code-2021/day11"
 	"github.com/steve148/advent-of-code-2021/day12"
+	"github.com/steve148/advent-of-code-2021/day13"
 	"github.com/steve148/advent-of-code-2021/day4"
 	"github.com/steve148/advent-of-code-2021/day5"
 	"github.com/steve148/advent-of-code-2021/day6"
@@ -55,5 +56,9 @@ func main() {
 		day12.Part1()
 	} else if day == "12" && part == "2" {
 		day12.Part2()
+	} else if day == "13" && part == "1" {
+		day13.Part1()
+	} else if day == "13" && part == "2" {
+		day13.Part2()
 	}
 }
