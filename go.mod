@@ -7,6 +7,7 @@ require (
 	github.com/steve148/advent-of-code-2021/day11 v0.0.0-20211230230822-c24ab15aa523 // indirect
 	github.com/steve148/advent-of-code-2021/day12 v0.0.0-20211230235200-8cc44d4ddd34 // indirect
 	github.com/steve148/advent-of-code-2021/day13 v0.0.0-20220101154958-ca25002f7f5a // indirect
+	github.com/steve148/advent-of-code-2021/day14 v0.0.0-20220102041408-6321491b909a // indirect
 	github.com/steve148/advent-of-code-2021/day4 v0.0.0-20211229222332-54e3a202e14e // indirect
 	github.com/steve148/advent-of-code-2021/day5 v0.0.0-20211229220039-b6d6cab8af99 // indirect
 	github.com/steve148/advent-of-code-2021/day6 v0.0.0-20211229222651-d7e270f4b4e0 // indirect
@@ -34,3 +35,5 @@ replace github.com/steve148/advent-of-code-2021/day11 v0.0.0-20211230230822-c24a
 replace github.com/steve148/advent-of-code-2021/day12 v0.0.0-20211230235200-8cc44d4ddd34 => ./day12
 
 replace github.com/steve148/advent-of-code-2021/day13 v0.0.0-20220101154958-ca25002f7f5a => ./day13
+
+replace github.com/steve148/advent-of-code-2021/day14 v0.0.0-20220102041408-6321491b909a => ./day14
